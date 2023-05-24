@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="1098.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sideBarController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="115.0" style="-fx-background-color: #2388;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="147.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/istockphoto-1304247363-612x612.jpg" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onMouseClicked="#getToPatients" prefHeight="71.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Patients" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Typewriter Bold" size="17.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#getToEmplyee" prefHeight="71.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Employees" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Typewriter Bold" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#getToService" prefHeight="71.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Services" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Typewriter Bold" size="17.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#getToParametres" prefHeight="71.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="infermier" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Typewriter Bold" size="17.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#getTosurev" prefHeight="71.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="survaillance" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Typewriter Bold" size="15.0" />
+               </font></Button>
+               <Button mnemonicParsing="false" onMouseClicked="#getToDocteur" prefHeight="71.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Docteur" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Typewriter Bold" size="17.0" />
+               </font></Button>
+               
+               <Button mnemonicParsing="false" onMouseClicked="#getToOrd" prefHeight="71.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Ordonance" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Typewriter Bold" size="17.0" />
+               </font></Button>
+               
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

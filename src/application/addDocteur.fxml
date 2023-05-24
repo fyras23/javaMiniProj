@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addDocteurController">
+   <children>
+      <Label layoutX="178.0" layoutY="14.0" prefHeight="26.0" prefWidth="176.0" style="-fx-background-color: #2388;" text="Ajouter Un Docteur">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="98.0" text="NumeroEmploye: " />
+      <TextField fx:id="specialiteField" layoutX="178.0" layoutY="150.0" prefHeight="26.0" prefWidth="260.0" />
+      <Label layoutX="84.0" layoutY="155.0" text="Specialite :" />
+      <TextField fx:id="idField" layoutX="178.0" layoutY="93.0" prefHeight="26.0" prefWidth="260.0" />
+      <Label layoutX="29.0" layoutY="191.0" />
+      <Button layoutX="137.0" layoutY="235.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="82.0" style="-fx-background-color: #00Cf1F;" text="Enregister " textFill="WHITE" />
+      <Button layoutX="329.0" layoutY="235.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="82.0" style="-fx-background-color: #ff0000;" text="Annuler" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InfirmierController">
+    <children>
+        <Label layoutX="230.0" layoutY="14.0" prefHeight="26.0" prefWidth="176.0" style="-fx-background-color: #2388;" text="Infirmiers">
+            <font>
+                <Font name="Tahoma" size="20.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableInfirmier" layoutX="16.0" layoutY="84.0" prefHeight="236.0" prefWidth="484.0">
+    <columns>
+        <TableColumn fx:id="numeroEmployeCol" prefWidth="100.0" text="Numero Employe" />
+        <TableColumn fx:id="salaireCol" prefWidth="100.0" text="Salaire" />
+        <TableColumn fx:id="gradeCol" prefWidth="100.0" text="Grade" />
+        <TableColumn fx:id="docteurAttacheCol" prefWidth="100.0" text="Docteur Attache" />
+    </columns>
+</TableView>
+
+        
+        <Button layoutX="36.0" layoutY="372.0" mnemonicParsing="false" onAction="#getAjoutinfView" prefHeight="30.0" prefWidth="160.0" text="Ajouter Infirmier" />
+<Button layoutX="204.0" layoutY="372.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Update" onAction="#handleUpdateButton" />
+<Button layoutX="372.0" layoutY="372.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="160.0" text="Supprimer Infirmier" onAction="#deleteSelectedRow" />
+
+    </children>
+</AnchorPane>
+
